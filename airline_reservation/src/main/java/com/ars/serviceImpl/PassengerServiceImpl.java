@@ -15,6 +15,7 @@ public class PassengerServiceImpl implements PassengerService{
 PassengerDAO passengerDao=new PassengerDAOImpl();
 	@Override
 	//save passenger
+	//MANGALDIP GHOSH
 	public void savePassenger(Passenger passenger) {
 		passengerDao.savePassenger(passenger);
 		
@@ -28,6 +29,7 @@ PassengerDAO passengerDao=new PassengerDAOImpl();
 	}
 	@Override
 	//update passenger by id
+	//MANGALDIP GHOSH
 	public PassengerDTO getPassengerById(int id) throws GlobalException {
 		Passenger  passenger1=passengerDao.getPassenger(id);
 		
@@ -41,6 +43,7 @@ PassengerDAO passengerDao=new PassengerDAOImpl();
 		return new ModelMapper().map(p, PassengerDTO.class);
 	}
 	//delete by id
+	//MANGALDIP GHOSH
 
 	@Override
 	public void deletePassenger(int id) throws PersistenceException {
