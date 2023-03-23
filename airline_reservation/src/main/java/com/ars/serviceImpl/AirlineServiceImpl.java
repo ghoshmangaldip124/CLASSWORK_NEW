@@ -16,6 +16,7 @@ public class AirlineServiceImpl implements AirlineService {
 AirlineDao airlineDAO=new AirlineDAOImpl();
 	@Override
 	//ailine data insert
+	//MANGALDIP GHOSH
 	public void saveAirline(Airline airline) {
 		airlineDAO.saveAirline(airline);
 		
@@ -24,6 +25,7 @@ AirlineDao airlineDAO=new AirlineDAOImpl();
 	@Override
 	
 	//asigin flight for airline flight id & air id
+	//MANGALDIP GHOSH
 	public void assignAirlineToFlight(int flightId, int airId) {
 		airlineDAO.assignAirlineToFlight(flightId, airId);
 		
@@ -31,6 +33,7 @@ AirlineDao airlineDAO=new AirlineDAOImpl();
 
 	@Override
 	//getairline by name
+	//MANGALDIP GHOSH
 	public AirlineDTO getAirlineByName(String name)throws GlobalException {
 		Airline airline=airlineDAO.getAirlineByName(name);
 		if(airline!=null)
