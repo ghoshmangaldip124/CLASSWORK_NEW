@@ -25,6 +25,7 @@ FlightDAO flightDAO=new FlightDAOImpl();
 
 	@Override
 	//update flight
+	//MANGALDIP GHOSH
 	public FlightDTO updateFlight(int id, Flight flight) {
 		Flight f=flightDAO.updateFlight(id, flight);
 		
@@ -45,6 +46,7 @@ FlightDAO flightDAO=new FlightDAOImpl();
 	@Override
 	
 	//delete flight by id
+	//MANGALDIP GHOSH
 	public void deleteFlight(int id) throws PersistenceException {
 		flightDAO.deleteFlight(id);
 		
