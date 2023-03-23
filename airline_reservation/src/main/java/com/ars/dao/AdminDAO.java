@@ -5,6 +5,7 @@ import javax.persistence.PersistenceException;
 import com.ars.entity.Admin;
 
 //interfacer admin dao cured operation
+//MANGALDIP GHOSH
 public interface AdminDAO {
 	void registerAdmin(Admin admin);
 	boolean loginAdmin(String userName,String password);
