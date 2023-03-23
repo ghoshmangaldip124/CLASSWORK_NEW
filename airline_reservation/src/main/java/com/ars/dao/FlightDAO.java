@@ -8,6 +8,7 @@ import javax.persistence.PersistenceException;
 import com.ars.entity.Flight;
 
 //interfacer flightdao cured operation
+//MANGALDIP GHOSH
 public interface FlightDAO {
 void saveFlight(Flight flight);
 Flight updateFlight(int id,Flight flight);
