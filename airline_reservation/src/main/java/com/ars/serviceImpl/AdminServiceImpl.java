@@ -24,6 +24,7 @@ public class AdminServiceImpl implements AdminService{
 	@Override
 	
 	//login admin
+	//MANGALDIP GHOSH
 	public boolean loginAdmin(String userName, String password) {
 	
 		return aDao.loginAdmin(userName, password);
@@ -51,6 +52,7 @@ public class AdminServiceImpl implements AdminService{
 			
 		}
 		//method for update admin  in service layer
+	//MANGALDIP GHOSH
 		@Override
 		public AdminDTO updateAdmin(int id, Admin admin) {
 			Admin a=aDao.updateAdmin(id, admin);
